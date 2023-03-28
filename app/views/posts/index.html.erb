@@ -2,15 +2,15 @@
 
 <table>
   <tr>
-    <th>内容</th>
+    <th>Tweet List</th>
   </tr>
 
 <% @posts.each do |post| %>
   <tr>
     <td><%= post.content %></td>
-    <td><%= link_to "つぶやきを編集する", edit_post_path(post.id) %></td>
+    <td>[<%= link_to "edit", edit_post_path(post.id), data: { confirm: '編集しますか？' } %>]</td>
+    <td>[<%= link_to 'del', post_path(post.id), method: :delete, data: { confirm: '削除しますか？' } %>]</td>
   </tr>
 <% end %>
 </table>
-
-<%= link_to '新しいつぶやきを投稿する', new_post_path %>
+<%= link_to 'Let\'s Tweet', new_post_path %>
