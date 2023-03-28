@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag 'normalize', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <header class="header clearfix">
+       <h3 class="title">Tubuyark</h3>
+      </header>
+      <div class="wrapper clearfix">
+        <%= yield %>
+      </div>
+      <footer class="footer">
+       <p>Copyright © 2023 DIVE INC All RIGHTS RESERVED.</p>
+      </footer>
+    </div>
   </body>
 </html>

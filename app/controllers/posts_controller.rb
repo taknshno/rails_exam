@@ -23,9 +23,6 @@ class PostsController < ApplicationController
   end
 
   def edit
-    if params[:back]
-      render :new
-    end
   end
 
   def update

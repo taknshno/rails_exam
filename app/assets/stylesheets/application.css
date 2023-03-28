@@ -1,15 +1,71 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html {
+  font-size: 90%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+}
+
+.wrapper table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.wrapper tr {
+  height: 25px;
+}
+
+.header {
+  background-color: #aacd6f;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.title {
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.wrapper {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-bottom: 50px;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  background-color: #aacd6f;
+  display: table;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.post_title {
+  height: 25px;
+  margin-bottom: 10px;
+}
